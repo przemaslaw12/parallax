@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <title>Parallax Website</title>
+  </head>
+  <body>
+    <div class="pimg1">
+      <nav class="navbar">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#ffffff" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#ffffff" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#ffffff" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
+      </nav>
+      <div class="ptext">
+        <span class="border">Santos Restaurant</span>
+        <p>Your favourite restaurant</p>
+      </div>
+    </div>
+
+    <section class="section section-light">
+      <h2>Section One</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <div class="pimg2">
+      <div class="ptext">
+        <span class="border trans">Image Two Text</span>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2>Section Two</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans">Image Three Text</span>
+      </div>
+    </div>
+
+    <section class="section section-light">
+      <h2>Section Three</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <div class="pimg1">
+      <div class="ptext reserv">
+        <span class="border">See you soon!</span>
+      </div>
+    </div>
+
+    <!--Hamburger Menu Stuff-->
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Section One</a>
+      <a href="#">Section Two</a>
+      <a href="#">Section Three</a>
+      <a href="#">Contact us!</a>
+    </div>
+
+    <script>
+      function openSlideMenu() {
+        document.getElementById('side-menu').style.width= '250px';
+      }
+      function closeSlideMenu() {
+        document.getElementById('side-menu').style.width= '0';
+      }
+    </script>
+  </body>
+</html>
